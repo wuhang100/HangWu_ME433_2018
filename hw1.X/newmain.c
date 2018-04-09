@@ -55,7 +55,8 @@ int main() {
     LATAbits.LATA4=1;
     TRISBbits.TRISB4=1;
     _CP0_SET_COUNT(0);
+    while(1){
+        delay();
+    }
 }
-
-
 
