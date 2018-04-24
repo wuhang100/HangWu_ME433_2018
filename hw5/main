@@ -74,12 +74,12 @@ int main(){
     TRISAbits.TRISA4=0;
     
     while(1){
-//    _CP0_SET_COUNT(0);
-//    while(_CP0_GET_COUNT()<24000000/5){;}
-//    LATAbits.LATA4=1;
-//    _CP0_SET_COUNT(0);
-//    while(_CP0_GET_COUNT()<24000000/5){;}
-//    LATAbits.LATA4=0;
+    _CP0_SET_COUNT(0);
+    while(_CP0_GET_COUNT()<24000000/5){;}
+    LATAbits.LATA4=1;
+    _CP0_SET_COUNT(0);
+    while(_CP0_GET_COUNT()<24000000/5){;}
+    LATAbits.LATA4=0;
 
     master = i2cread(); 
     if (master==0b10000000){
